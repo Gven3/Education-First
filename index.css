@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+main {
+    display: flex;
+}
+
+.iphone{
+    display: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+.background {
+    height: 100vh;
+    cursor: default;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    background-color: white;
+    border-radius: 16px;
+    right: 14px;
+}
+
+.logo {
+    width: 270px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.text {
+    display: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: #003D61;
+}
+
+input {
+    width: 400px;
+    height: 35px;
+    padding: 5px 45px;
+    border-top: none;
+    border-right: none;
+    color: #003D61;
+}
+
+.forgot {
+    display: none;
+}
+
+.footer {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    gap: 15px;
+}
+
+a {
+    color: #ED2980;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 300px;
+}
+
+button {
+    display: none;
+}
+
+.new {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .background{
+        width: 100vw;
+        height: auto;
+    }
+    section {
+        position: relative;
+        bottom: 100px;
+        right: 0;
+        border-radius: 30px;
+    }
+
+    .iphone{
+        color: white;
+        height: 12px;
+        width: 449px;
+        position: absolute;
+        display: flex;
+        padding: 20px;
+        top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .email {
+        display: none;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+    .text > input {
+        border-left: none;
+        padding: 0;
+        color: #003D61;
+    }
+    [type=password] {
+        border-left: none;
+        padding: 0;
+        color: #003D61;
+    }
+
+    [type=password]::placeholder {
+        opacity: 0;
+    }
+
+
+    .footer{
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .username{
+        display: none;
+    }
+
+    .forgot {
+        display: flex;
+        margin-top: -20px;
+    }
+
+    .icons{
+        display: flex;
+    }
+    button {
+        display: flex;
+        width: 327px;
+        height: 50px;
+        border-radius: 6px;
+        background-color: #003D61;
+        color: white;
+        margin-top: 15px;
+        padding: 12px 140px;
+    }
+    
+    .new {
+        display: flex;
+        margin-top: 20px;
+    }
+}
